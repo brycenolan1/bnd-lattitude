@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width", initial-scale="1">
+      <title>Web Visualization Dashboard (Latitude)</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="container">
+         <nav class="navbar">
+            <a class="navbar-brand" href="index.html">Lattitude</a>
+            <div class="navbar-right">
+               <div class="dropdown">
+                  <button class="dropdown-toggle" data-toggle="dropdown"> Plots 
+                  <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                     <li><a href="temp.html"> Max Temperature </a></li>
+                     <li><a href="humid.html"> Humidity</a></li>
+                     <li><a href="cloud.html"> Cloudiness </a></li>
+                     <li><a href="wind.html"> Wind Speed </a></li>
+                  </ul>
+               </div>
+               <a href="comparison.html">Comparison</a>
+               <a href="data.html">Data</a>
+            </div>
+         </nav>
+         <section class="posts">
+            <div class="row">
+               <div class="col-sm-12 col-lg-8">
+                  <div class="box box-1">
+                     <h1> Humidity </h1>
+                     <hr>
+                     <figure class="img" > 
+                        <img src="Fig2.png" alt = "latitude versus humidity" style="width:100%">
+                     </figure>
+                     <p> There doesn’t appear to be a correlation with location from the equator and humidity. Heavy humidity
+                        tends to span between -40 Latitude and 70 Latitude.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-lg-4">
+                  <div class = "box box-2">
+                     <h2> Visualizations </h2>
+                     <hr>
+                     <div class="row">
+                        <div class="col-sm-3 col-lg-6">
+                           <a href="temp.html"> <img src="Fig1.png" alt = "latitude versus maximum temperature" style="width:100%"> </a>
+                        </div>
+                        <div class="active col-sm-3 col-lg-6">
+                           <a href="humid.html"> <img src="Fig2.png" alt = "latitude versus maximum temperature" style="width:100%"> </a>
+                        </div>
+                        <div class="col-sm-3 col-lg-6">
+                           <a href="cloud.html"> <img src="Fig3.png" alt = "latitude versus maximum temperature" style="width:100%"></a>
+                        </div>
+                        <div class="col-sm-3 col-lg-6">
+                           <a href="wind.html"> <img src="Fig4.png" alt = "latitude versus maximum temperature" style="width:100%"> </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+      </section>
+      </div>
+   </body>
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
